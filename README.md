@@ -9,8 +9,8 @@ to a log.
 ## Data
 
 Public **WPA3 Attacks Dataset** (Mendeley Data, DOI 10.17632/cxx5t5nw7z.1), recorded in a lab
-with one WPA3-Personal access point and four stations. Download these CSV files from
-<https://data.mendeley.com/datasets/cxx5t5nw7z/1> and put them in a `data/` folder:
+with one WPA3-Personal access point and four stations. Access to these CSV files are public from
+<https://data.mendeley.com/datasets/cxx5t5nw7z/1> . I used below the three attack csv files to build my system
 
 - `Deauth.csv` (deauthentication flood)
 - `Disasso.csv` (disassociation flood, also contains deauth frames)
