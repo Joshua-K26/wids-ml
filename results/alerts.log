@@ -1,0 +1,66 @@
+[ALERT 13:14:14] Disconnect detected (disconnect frames/sec: 438, beacons/sec: 7)
+[ACTION 13:14:14] Incident logged; channel flagged for investigation
+[CLEAR 13:14:22] Traffic back to normal
+[ALERT 13:14:23] Disconnect detected (disconnect frames/sec: 258, beacons/sec: 3)
+[ACTION 13:14:23] Incident logged; channel flagged for investigation
+[CLEAR 13:14:34] Traffic back to normal
+[ALERT 13:14:38] Disconnect detected (disconnect frames/sec: 9, beacons/sec: 7)
+[ACTION 13:14:38] Incident logged; channel flagged for investigation
+[CLEAR 13:14:52] Traffic back to normal
+[ALERT 13:14:55] Disconnect detected (disconnect frames/sec: 250, beacons/sec: 1)
+[ACTION 13:14:55] Incident logged; channel flagged for investigation
+[CLEAR 13:15:08] Traffic back to normal
+[ALERT 13:15:09] Disconnect detected (disconnect frames/sec: 44, beacons/sec: 4)
+[ACTION 13:15:09] Incident logged; channel flagged for investigation
+[CLEAR 13:16:09] Traffic back to normal
+[ALERT 13:16:13] Disconnect detected (disconnect frames/sec: 15, beacons/sec: 6)
+[ACTION 13:16:13] Incident logged; channel flagged for investigation
+[CLEAR 13:16:18] Traffic back to normal
+[ALERT 13:16:22] Disconnect detected (disconnect frames/sec: 4, beacons/sec: 8)
+[ACTION 13:16:22] Incident logged; channel flagged for investigation
+[CLEAR 13:16:54] Traffic back to normal
+[ALERT 13:16:58] Disconnect detected (disconnect frames/sec: 31, beacons/sec: 8)
+[ACTION 13:16:58] Incident logged; channel flagged for investigation
+[CLEAR 13:17:03] Traffic back to normal
+[ALERT 13:17:05] Disconnect detected (disconnect frames/sec: 113, beacons/sec: 10)
+[ACTION 13:17:05] Incident logged; channel flagged for investigation
+[CLEAR 13:17:09] Traffic back to normal
+[ALERT 13:17:16] Disconnect detected (disconnect frames/sec: 8, beacons/sec: 5)
+[ACTION 13:17:16] Incident logged; channel flagged for investigation
+[CLEAR 13:17:24] Traffic back to normal
+[ALERT 13:17:25] Disconnect detected (disconnect frames/sec: 92, beacons/sec: 7)
+[ACTION 13:17:25] Incident logged; channel flagged for investigation
+[CLEAR 13:17:29] Traffic back to normal
+[ALERT 13:17:33] Disconnect detected (disconnect frames/sec: 21, beacons/sec: 8)
+[ACTION 13:17:33] Incident logged; channel flagged for investigation
+[CLEAR 13:18:23] Traffic back to normal
+[ALERT 13:18:26] Disconnect detected (disconnect frames/sec: 48, beacons/sec: 4)
+[ACTION 13:18:26] Incident logged; channel flagged for investigation
+[CLEAR 13:18:52] Traffic back to normal
+[ALERT 13:18:53] Disconnect detected (disconnect frames/sec: 16, beacons/sec: 5)
+[ACTION 13:18:53] Incident logged; channel flagged for investigation
+[CLEAR 13:19:06] Traffic back to normal
+[ALERT 13:19:15] Disconnect detected (disconnect frames/sec: 5, beacons/sec: 5)
+[ACTION 13:19:15] Incident logged; channel flagged for investigation
+[CLEAR 13:19:18] Traffic back to normal
+[ALERT 13:19:20] Disconnect detected (disconnect frames/sec: 11, beacons/sec: 6)
+[ACTION 13:19:20] Incident logged; channel flagged for investigation
+[CLEAR 13:19:25] Traffic back to normal
+[ALERT 13:19:30] Disconnect detected (disconnect frames/sec: 11, beacons/sec: 5)
+[ACTION 13:19:30] Incident logged; channel flagged for investigation
+[CLEAR 13:19:33] Traffic back to normal
+[ALERT 13:19:37] Disconnect detected (disconnect frames/sec: 8, beacons/sec: 7)
+[ACTION 13:19:37] Incident logged; channel flagged for investigation
+[CLEAR 13:19:40] Traffic back to normal
+[ALERT 13:19:41] Disconnect detected (disconnect frames/sec: 27, beacons/sec: 5)
+[ACTION 13:19:41] Incident logged; channel flagged for investigation
+[CLEAR 13:20:22] Traffic back to normal
+[ALERT 13:20:23] Disconnect detected (disconnect frames/sec: 21, beacons/sec: 2)
+[ACTION 13:20:23] Incident logged; channel flagged for investigation
+[CLEAR 13:20:30] Traffic back to normal
+
+--- SUMMARY (replayed capture the model never saw) ---
+Seconds scanned: 907
+True attack seconds: 240 | caught: 229
+False-alarm seconds: 0
+Incidents raised: 20
