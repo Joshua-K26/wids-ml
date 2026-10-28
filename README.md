@@ -17,7 +17,7 @@ with one WPA3-Personal access point and four stations. Download these CSV files 
 - `BeaconFlood.csv` (beacon flood)
 
 The raw files are not stored in this repository (too large, and they belong to the dataset
-authors). Check the dataset page for its licence before redistributing anything.
+authors). `data/windows_all.csv` is my own per-second summary computed from them.
 No traffic was captured or attacked by me; everything uses this public dataset.
 
 ## How it works
@@ -32,16 +32,23 @@ No traffic was captured or attacked by me; everything uses this public dataset.
 
 ## Run it
 
+**Quick start (no download needed).** The repository includes the small summary table
+`data/windows_all.csv` (one row per second, about 2,300 rows) and the trained model
+`models/wids_lstm.pt`, so the detector and the evaluation run straight from a fresh clone:
+
 ```
-pip install -r requirements.txt
-export WIDS_DATA_DIR=data            # Windows PowerShell: $env:WIDS_DATA_DIR="data"
-python src/make_windows.py           # frames -> windows_all.csv
-python src/train_eval.py --seeds 1   # results (use the default 5 seeds for the final numbers)
+git clone https://github.com/Joshua-K26/wids-ml
+cd wids-ml
+pip install -r requirements.txt      # Python 3.10-3.12 recommended; PyTorch is a large download
 python src/detector.py               # replay + alerts, writes results/alerts.log
+python src/train_eval.py --seeds 1   # evaluation (use the default 5 seeds for the final numbers)
 ```
 
-`models/wids_lstm.pt` is a model trained without `Disasso.csv`; the detector replays that capture,
-so the alerts come from a capture the model never saw. Use `--retrain` to train again.
+The same commands work in Google Colab (put `!` before each, and run `%cd wids-ml` after the clone).
+Optional flags: `python src/detector.py --delay 0.1` replays slowly for a demo, `--retrain` trains a new model.
+
+**Full pipeline from the raw dataset.** To rebuild `windows_all.csv` yourself, download the three
+CSVs listed under Data into `data/` and run `python src/make_windows.py` first.
 
 ## Results
 
