@@ -51,6 +51,16 @@ Optional flags: `python src/detector.py --delay 0.1` replays slowly for a demo, 
 CSVs listed under Data into `data/` and run `python src/make_windows.py` first.
 
 ## Results
+### Detector replay on a recording the model never saw
+Grey line: disconnect frames per second. Pink: the real attack. Red dots: seconds where the detector raised an alert.
+
+![Detector timeline](results/detector_timeline.png)
+
+### LSTM confusion matrix (same-recording test, one run)
+![LSTM confusion matrix](results/lstm_confusion.png)
+
+### Random Forest, 4 classes (why Deauth and Disassoc were merged)
+![Random Forest 4-class confusion matrix](results/rf_confusion_Full.png)
 
 Plain accuracy is misleading here (always answering "Normal" already scores 60.8%), so the
 tables show per-class results. Pictures are in `results/`.
