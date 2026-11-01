@@ -45,7 +45,21 @@ python src/train_eval.py --seeds 1   # evaluation (use the default 5 seeds for t
 ```
 
 The same commands work in Google Colab (put `!` before each, and run `%cd wids-ml` after the clone).
+**What the detector produces.** Running `python src/detector.py` writes two files into `results/`:
 
+- `alerts.log`: the alerts, incident times and the summary (seconds scanned, attack seconds caught, false alarms)
+- `detector_timeline.png`: a chart of the replay (grey line = disconnect frames per second, pink = the real attack, red dots = seconds where the detector raised an alert)
+
+**To view the chart in Google Colab**, run this in a new cell after the detector has finished:
+
+```python
+from IPython.display import Image
+Image("results/detector_timeline.png")
+```
+
+**To view it on your own computer**, open `results/detector_timeline.png` in any image viewer. The log can be read with `cat results/alerts.log` (Windows: `type results\alerts.log`).
+
+A copy of both files from my own run is already committed in `results/`, and the README shows the chart under Results. Running the detector again regenerates them, and the numbers can differ slightly from run to run.
 
 **Full pipeline from the raw dataset.** To rebuild `windows_all.csv` yourself, download the three
 CSVs listed under Data into `data/` and run `python src/make_windows.py` first.
