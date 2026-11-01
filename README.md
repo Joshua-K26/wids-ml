@@ -45,7 +45,7 @@ python src/train_eval.py --seeds 1   # evaluation (use the default 5 seeds for t
 ```
 
 The same commands work in Google Colab (put `!` before each, and run `%cd wids-ml` after the clone).
-Optional flags: `python src/detector.py --delay 0.1` replays slowly for a demo, `--retrain` trains a new model.
+
 
 **Full pipeline from the raw dataset.** To rebuild `windows_all.csv` yourself, download the three
 CSVs listed under Data into `data/` and run `python src/make_windows.py` first.
